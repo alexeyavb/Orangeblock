@@ -1,0 +1,12 @@
+{
+  "subpcb": {
+    "2floor_for_orange_pi.kicad_pcb": {
+      "anchor": "J1"
+    }
+  },
+  "sheet": {
+    "": {
+      "checked": false
+    }
+  }
+}
