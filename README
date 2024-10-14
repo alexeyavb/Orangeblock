@@ -18,7 +18,9 @@ Wh implemented as demo
 
  simple stm32-i2s kernel audio device driver for use ALSA/JACKd (audio in and audio out)
  simple overlay for enabling i2s in Orange PI PC/ONE in 40pin GPIO header. Implement as 48k 24bit 256fs only without bclck change
-  
+
+Complete tracing shield
+
 [test board photo1]
 [test board photo2]
 [test board photo3]
