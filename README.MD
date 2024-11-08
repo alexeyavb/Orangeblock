@@ -23,6 +23,6 @@ Complete tracing shield
 
 2024/Nov/08
 Received printed PCB
-![Printed PCB1](./docs/IMG_0718.jpg)
-![Printed PCB2](./docs/IMG_0719.jpg)
+![Printed PCB1](./docs/IMG_0718.jpeg)
+![Printed PCB2](./docs/IMG_0719.jpeg)
 There was an error in placing the socket for 3PIN UART socket from orange PI to shield. This will not interfere with functionality, but will be fixed in the next version of the board.
