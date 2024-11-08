@@ -21,10 +21,8 @@ Wh implemented as demo
 
 Complete tracing shield
 
-[test board photo1]
-[test board photo2]
-[test board photo3]
-[test board photo4]
-
-
-
+2024/Nov/08
+Received printed PCB
+![Printed PCB1](./docs/IMG_0718.jpg)
+![Printed PCB2](./docs/IMG_0719.jpg)
+There was an error in placing the socket for 3PIN UART socket from orange PI to shield. This will not interfere with functionality, but will be fixed in the next version of the board.
