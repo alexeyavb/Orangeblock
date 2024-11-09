@@ -39,7 +39,7 @@
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0734.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0735.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0736.jpeg)
-![on screen](./docs/Conn_And_Tests/ADC_20241109/Audacity_Test.png)
+![on screen](./docs/Conn_And_Tests/ADC_20241109/Audacity_test.png)
 * Testing with simple i2s hardware-factory-slave with fs autodetection configured i2s ADC 24bit pcm1808 (board from ChipDip DAC)
 command: 
 <p> $arecord -t raw -D "hw:1,0" -V stereo -c 2 -f S24_LE -r 32000 -d 400 -v --dump-hw-params --disable-resample ~/002-test24.dat</p>
