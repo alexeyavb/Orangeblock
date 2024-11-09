@@ -33,7 +33,6 @@
 ![Soldered PCB1](./docs/IMG_0728.jpeg)
 * Testing with STM32 board
 ![Soldered PCB1](./docs/IMG_0729.jpeg)
-![Soldered PCB1](./docs/IMG_0730.jpeg)
 ![testing record without ADC PCB1](./docs/IMG_0732.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0733.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0734.jpeg)
@@ -52,6 +51,6 @@ command:
     +mp3 data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3
 
 + Found issue with UART OPI positions
-![Soldered PCB1](./docs/ISSUES/IMG_0731.jpeg)
+![Soldered PCB1](./docs/IMG_0730.jpeg)
 ***remarks***
 There was an error in placing the socket for 3PIN UART socket from orange PI to shield. This will not interfere with functionality, but will be fixed in the next version of the board.
