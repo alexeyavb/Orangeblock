@@ -46,12 +46,10 @@ command:
   ****$arecord -t raw -D "hw:1,0" -V stereo -c 2 -f S24_LE -r 32000 -d 400 -v --dump-hw-params --disable-resample ~/002-test24.dat****
 
 ![testing record with ADC PCB1](./docs/IMG_0732.jpeg)
-![linux on screen](./docs/IMG_0733.jpeg)
-![Audacity](./docs/IMG_0733.jpeg)
 
 + ***raw folder contained raw i2s 24bit 48k data and mp3 ()***
-![raw data in folder](./docs/Conn_And_Tests/ADC_20241109/results/002-test24.dat)
-![mp3 data in folder](./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3)
+++ raw i2s data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.dat
+++ mp3 data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3
 
 + Found issue with UART OPI positions
 ![Soldered PCB1](./docs/ISSUES/IMG_0731.jpeg)
