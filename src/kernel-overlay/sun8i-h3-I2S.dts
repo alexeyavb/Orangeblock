@@ -1,0 +1,57 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "allwinner,sun8i-h3";
+
+ 	fragment@0 { 
+ 		target-path = "/"; 
+ 		__overlay__ { 
+			stm32f411_i2s: stm32f411_i2s {
+			#sound-dai-cells = <0>;
+			compatible = "stm32,stm32f411_i2s";
+			stm32f411_i2s,format = "i2s";
+			};
+ 		}; 
+ 	}; 
+
+	fragment@1 {
+		target = <&i2s0>;
+		__overlay__ {
+			status = "okay";
+			pinctrl-0 = <&i2s0_pins>;
+			sound-dai = <&stm32f411_i2s>;
+			pinctrl-names = "default";
+		};
+	};
+
+	fragment@2 {
+		target-path = "/";
+		__overlay__ {
+			sound_i2s {
+				compatible = "simple-audio-card";
+				simple-audio-card,name = "i2S";
+				simple-audio-card,mclk-fs = <256>;
+				simple-audio-card,format = "i2s";
+				simple-audio-card,widgets =
+					"Line", "Line In",
+					"Line", "Line Out";
+				simple-audio-card,routing =
+					"AINL", "Line In",
+					"AINR", "Line In",
+					"Line Out", "AOUTL",
+					"Line Out", "AOUTR";
+		                status = "okay";
+				simple-audio-card,bitclock-slave = <&dailink0_slave>;
+				simple-audio-card,frame-slave = <&dailink0_slave>;
+				simple-audio-card,cpu {
+					sound-dai = <&i2s0>;
+				};
+
+				dailink0_slave: simple-audio-card,codec {
+					sound-dai = <&stm32f411_i2s>;
+				};
+			};
+		};
+	};
+};
