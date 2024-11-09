@@ -47,7 +47,8 @@ command:
 ![linux on screen](./docs/IMG_0733.jpeg)
 ![Audacity](./docs/IMG_0733.jpeg)
 * ***raw folder contained raw i2s 24bit 48k data and mp3 ()***
-![raw data in folder](./docs/Conn_And_Tests/ADC_20241109/results/)
+![raw data in folder](./docs/Conn_And_Tests/ADC_20241109/results/002-test24.dat)
+![mp3 data in folder](./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3)
 
 * Found issue with UART OPI positions
 ![Soldered PCB1](./docs/ISSUES/IMG_0731.jpeg)
