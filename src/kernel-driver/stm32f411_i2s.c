@@ -3,6 +3,7 @@
 //
 // Copyright (C) 2013 Renesas Solutions Corp.
 // Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
+// Copyright (C) 2024-2025 Alexey Barnukoff
 
 #include <linux/module.h>
 #include <sound/soc.h>
@@ -96,5 +97,5 @@ module_platform_driver(stm32f411_i2s_driver);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("SoC stm32f411_i2s driver");
-MODULE_AUTHOR("Alexey Barnukoff <barnukoff@1cdev.ru>");
+MODULE_AUTHOR("2024-2025 Alexey Barnukoff <barnukoff@1cdev.ru>, 2013 Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>");
 
