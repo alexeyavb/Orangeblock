@@ -31,7 +31,8 @@
 2024/Nov/09
 * Soldered sockets anmd pins
 ![Soldered PCB1](./docs/IMG_0728.jpeg)
-* Testing with STM32 board
+
++ ***Process Testing with STM32 board***
 ![Soldered PCB1](./docs/IMG_0729.jpeg)
 ![testing record without ADC PCB1](./docs/IMG_0732.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0733.jpeg)
@@ -39,6 +40,7 @@
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0735.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/IMG_0736.jpeg)
 ![on screen](./docs/Conn_And_Tests/ADC_20241109/Audacity_test.png)
+
 * Testing with simple i2s hardware-factory-slave with fs autodetection configured i2s ADC 24bit pcm1808 (board from ChipDip DAC)
 command: 
 
@@ -51,6 +53,6 @@ command:
     +mp3 data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3
 
 + Found issue with UART OPI positions
-![PCB1 ISSUE UART](./docs/IMG_0731.jpeg)
+![PCB1 ISSUE UART](./docs/ISSUES/IMG_0731.jpeg)
 ***remarks***
 There was an error in placing the socket for 3PIN UART socket from orange PI to shield. This will not interfere with functionality, but will be fixed in the next version of the board.
