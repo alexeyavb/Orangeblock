@@ -51,6 +51,8 @@ command:
 + ***raw folder contained raw i2s 24bit 48k data and mp3 ()***
     +raw i2s data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.dat
     +mp3 data in folder ./docs/Conn_And_Tests/ADC_20241109/results/002-test24.mp3
+2024/Nov/17
+* Added OPI SPI kernel overlay
 
 + Found issue with UART OPI positions
 ![PCB1 ISSUE UART](./docs/ISSUES/IMG_0731.jpeg)

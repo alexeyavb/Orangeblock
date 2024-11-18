@@ -1,2 +1,3 @@
-2023 (c) more Linux kernel authors
+2001 (c) more Linux kernel authors
+2017 (c) https://github.com/ua3nbw-cf/orangepi_i2s
 2023-2024 (c) Alexey barnukoff
