@@ -1,0 +1,79 @@
+/dts-v1/;
+
+/ {
+	compatible = "allwinner,sun8i-h3";
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			spi0_cs1 {
+				pins = "PA10";
+				function = "gpio_out";
+				output-high;
+				phandle = <0x01>;
+			};
+
+/*
+			spi1_cs1 {
+				pins = "PA10";
+				function = "gpio_out";
+				output-high;
+				phandle = <0x02>;
+			};
+*/
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			pinctrl-names = "default\0default";
+			pinctrl-1 = <0x01>;
+//			cs-gpios = <0x00 0xffffffff 0x00 0x15 0x00>;
+			cs-gpios = <0x00 0xffffffff 0x00 0x10 0x00>;
+		};
+	};
+/*
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			pinctrl-names = "default\0default";
+			pinctrl-1 = <0x02>;
+			cs-gpios = <0x00 0xffffffff 0x00 0x0a 0x00>;
+		};
+	};
+*/
+	__symbols__ {
+		spi0_cs1 = "/fragment@0/__overlay__/spi0_cs1";
+//		spi1_cs1 = "/fragment@0/__overlay__/spi1_cs1";
+	};
+
+	__fixups__ {
+//		pio = "/fragment@0:target:0\0/fragment@1/__overlay__:cs-gpios:4\0/fragment@2/__overlay__:cs-gpios:4";
+		pio = "/fragment@0:target:0\0/fragment@1/__overlay__:cs-gpios:4";
+		spi0 = "/fragment@1:target:0";
+//		spi1 = "/fragment@2:target:0";
+	};
+
+	__local_fixups__ {
+
+		fragment@1 {
+
+			__overlay__ {
+				pinctrl-1 = <0x00>;
+			};
+		};
+/*
+		fragment@2 {
+
+			__overlay__ {
+				pinctrl-1 = <0x00>;
+			};
+		};
+*/
+	};
+};
