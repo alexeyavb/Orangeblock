@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ST-Link Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "build DEBUG",
+            "device": "STM32F411CE",
+            "svdFile": "/opt/ST/STM32CubeCLT/STMicroelectronics_CMSIS_SVD/STM32F411.svd",
+            "configFiles": [],
+            "showDevDebugOutput": "parsed" ,
+            "liveWatch": {
+                "enabled": false,
+                "samplesPerSecond": 6
+            },
+},
+{
+    "name": "OpenOCD Cortex Debug",
+    "cwd": "${workspaceRoot}",
+    "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
+    "request": "launch",
+    "type": "cortex-debug",
+    "servertype": "openocd",
+    "runToEntryPoint": "main",
+    "preLaunchTask": "build DEBUG",
+    "device": "STM32F411CE",
+    "svdFile": "/opt/ST/STM32CubeCLT/STMicroelectronics_CMSIS_SVD/STM32F411.svd",
+    "configFiles": [
+        "interface/stlink-v2.cfg",
+        "target/stm32f4x.cfg",
+    ],
+    "showDevDebugOutput": "parsed" ,
+    "liveWatch": {
+        "enabled": false,
+        "samplesPerSecond": 6
+    },
+},
+{
+    "name": "BM-Probe Cortex Debug",
+    "cwd": "${workspaceRoot}",
+    "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
+    "request": "launch",
+    "type": "cortex-debug",
+    "servertype": "bmp",
+    "runToEntryPoint": "main",
+    "preLaunchTask": "build DEBUG",
+    "device": "STM32F411CE",
+    "svdFile": "/opt/ST/STM32CubeCLT/STMicroelectronics_CMSIS_SVD/STM32F411.svd",
+    "configFiles": [],
+    "showDevDebugOutput": "raw" ,
+    "liveWatch": {
+        "enabled": false,
+        "samplesPerSecond": 6
+    },
+},
+
+],
+}

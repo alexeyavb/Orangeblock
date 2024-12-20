@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build DEBUG",
+            "type": "shell",
+            "command": "colormake",
+            "args": [                
+                "all",
+                "-j24",
+//                 "-Cmy-project",                
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {"base": "$gcc", "fileLocation":"absolute"}
+        },
+        {
+            "label": "build RELEASE",
+            "type": "shell",
+            "command": "colormake",
+            "args": [
+                // "-Cmy-project",
+                // "BOARD=stm32f411blackpill",
+                "RELEASE=1",
+                "LOG=0",
+                "all",
+                "-j24"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": {"base": "$gcc", "fileLocation":"absolute"}
+        },
+        {
+            "label": "flash dfu",
+            "type": "shell",
+            "command": "colormake",
+            "args": [
+                // "-Cmy-project",
+                // "BOARD=stm32f411blackpill",
+                "flash",
+                "-j24"
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": false
+            },
+            "problemMatcher": {"base": "$gcc", "fileLocation":"absolute"}
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "colormake",
+            "args": [
+                // "-Cmy-project",
+                // "BOARD=stm32f411blackpill",
+                "clean"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },            
+            "problemMatcher": {"base": "$gcc", "fileLocation":"absolute"}
+        }, 
+    ]
+}

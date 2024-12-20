@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c",
+        "*.c.dis": "c",
+        "*.h.dis": "c",
+        "*.tcc": "c",
+        "cstdlib": "c",
+        "memory": "c",
+        "*.s": "asm",
+    },
+    "cmake.configureOnOpen": false,
+    "cortex-debug.variableUseNaturalFormat": false
+}
